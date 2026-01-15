@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promesa con Proceso Pesado</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #ffebee;
+            color: #b71c1c;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            border: 2px solid #b71c1c;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            max-width: 600px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>¡Cuidado! Proceso Pesado</h1>
+        <p>Al cargar esta página, un script ejecutará una tarea intensiva que congelará el navegador por unos segundos.
+        </p>
+        <p>Intenta hacer clic en el botón o seleccionar texto mientras ocurre el proceso (no podrás).</p>
+        <button onclick="alert('¡Click detectado!')">Botón de prueba</button>
+        <br><br>
+        <p><strong>Abre la consola (F12) para ver los logs.</strong></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
